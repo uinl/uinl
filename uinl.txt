@@ -1,0 +1,9 @@
+UINL (User Interface object-Notation Language)
+version 1.00 (20200426)
+
+Sample Interaction
+  Message Type        Message Content                                        Description
+  ** task->user **    ["Hello World!",{"id":"click me","v":false}]           text "Hello World!" and button "click me" are added to user display
+  ** user->task **    {"_":"click me","v":true,"U":3450]                     user clicks the button "click me" (3.45s after the task loaded)
+  ** task->user **    [null,"Goodbye."]                                      display is cleared, and then text "Goodbye." is added to the display
+
