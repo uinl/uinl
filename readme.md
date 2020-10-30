@@ -1,4 +1,4 @@
-<img src="https://UINL7.github.io/img/UINL-icon.png" width=250 align=right>
+<img src="https://uinl.github.io/img/icon.png" width=250 align=right>
 UINL (User Interface object-Notation Language) is a machine-readable format for specifying user-interface changes.
 
 Main focus of UINL is in providing a functionally-equivalent task experience for human and computational users alike.
@@ -37,7 +37,8 @@ Sample Interactions:
     Sample Interaction:
         // add text "Hello World" and a "Click Me" button to the display
         -> ["Hello World",{"id":"Click Me","v":false}]
-        // user clicks the button (13.82s into the task)
-        <- {"_":"Click Me","v":true,"U":13820}
+        // user clicks the button (3.45s into the task)
+        <- {"_":"Click Me","v":true,"u":3450}
         // remove "Click Me" button
         -> {"_":"Click Me","v":null}
+  
