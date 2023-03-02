@@ -233,7 +233,7 @@ User event messages (i.e., UI->APP messages) are sent from UI software to the ap
 | -------- | -------- |
 | **requirable**    | specifies all requirable UI functionality    |
 | **s**    | session state (this is echoed from the session state specified via the APP->UI "state" command)    |
-| **t**    | timestamp indicating when user event has occurred    |
+| **t**    | timestamp (number of milliseconds after handshake) indicating when user event has occurred; must be 0 for handshake and greater than 0 for all other messages    |
 | **u**    | unique id (or id-path) for item being toggled/changed in the UI    |
 | **v**    | value indicating user input    |
 | **!**    | error message to be dumped into app-side error stream    |
