@@ -29,7 +29,6 @@ Below are brief descriptions of UINL widgets and features.
 
 Check out the full UINL spec with examples:
 - [google spreadsheet](https://docs.google.com/spreadsheets/d/1OkwYU2Wq-ysESvEwfeu7J0NrEw2qGadOCmkjEe0JKc4/edit?usp=sharing)
-- [markdown](uinl.md)
 - [tab-separated values](uinl.tsv)
 
 
@@ -150,7 +149,7 @@ Check out the full UINL spec with examples:
 | min    | min    | number    | minimum displayable value    |
 | max    | max    | number    | maximum displayable value    |
 | step    | step    | number    | step size for current item's numeric value (interacts with "min")    |
-| unit    | unit    | number    | unit of measurement (e.g. "$", "%", "kg", "€ million", "$ k")    |
+| unit    | unit    | number    | unit of measurement (e.g. "\$", "\%", "kg", "€ million", "\$ k")    |
 | logScale    | log    | number    | log-scale for current item's numeric value (interacts with "min" and "step")    |
 | length    | len    | "txt"    | maximum number of displayable characters    |
 | optionGroup    | grp    | "opt"    | group options, such that only one among them can be selected at a time (i.e., like radio buttons or pull-down menu)    |
@@ -161,7 +160,7 @@ Check out the full UINL spec with examples:
 | columns    | cols    | "grid"    | minimum number of columns in current grid    |
 | headerRow    | head    | "grid"    | mark first row in this grid as a header row with special functionality (e.g., "df" property for a cell in header row creates default templates for all cells in its column)    |
 | hexGrid    | hex    | "grid"    | offset every other row in the grid, such that each non-peripheral cell has 6 adjacent cells (left, right, above+left, above+right, below+left, below+right) rather than 4 (left, right, above, below)    |
-| format    | fmt    | "doc", "url", "media", plus "Open" and "Save" commands | format type for "url", "media", and "doc" components, as well as for <<uiDirective>> "Open" and "Save"    |
+| format    | fmt    | "doc", "url", "media", plus "Open" and "Save" commands | format type for "url", "media", and "doc" components, as well as for root-level commands "Open" and "Save"    |
 | play    | play    | "media"    | pause/play media    |
 | at    | at    | "media"    | audio/video time position (in seconds)    |
 | axisx    | axisx    | "plot", "data"    | x-axis labels/markers    |
