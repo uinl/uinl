@@ -38,9 +38,9 @@ Check out the full UINL spec with examples:
 
 | Message Type    | Message Content    | Description    |
 | -------- | -------- | -------- |
-| **UI->APP** | `{"t":0}`    | user-agent announces that it has loaded, and requests the initial display; `"t":0` indicates that UI clock time is at 0ms |
+| **UI->APP** | `{"t":0}`    | user-agent announces that it has loaded, and requests the initial display; `"t":0` indicates that UI clock **t**ime is at 0ms |
 | **APP->UI** | `{"v":["Hello World!",{"class":"btn","id":"click me"}]}` | text "Hello World!" and button "click me" are added to user display    |
-| **UI->APP** | `{"t":3450,"u":"click me","v":true}`    | user clicks the button "click me" (3.45s after the UI loaded); `"u":"click me"` indicates that the unique id of the target item of current user-event is `"click me"`; `"v":true` indicates that the value of target item was toggled from its default state (`false`) to `true` -- i.e., button was clicked    |
+| **UI->APP** | `{"t":3450,"u":"click me","v":true}`    | user clicks the button "click me" (3.45s after the UI loaded); `"u":"click me"` indicates that the **u**nique id of the target item of current user-event is `"click me"`; `"v":true` indicates that the **v**alue of target item was toggled from its default state (`false`) to `true` -- i.e., button was clicked    |
 | **APP->UI** | `{"v":["Goodbye."],"state":0}`    | display is cleared, text "Goodbye." is added to the display; `"state":0` indicates that app is closing    |
 
 
