@@ -100,7 +100,7 @@ Check out the full UINL spec with examples:
 | **class**    | **c**    | any, except root    | component class (i.e., widget type)    |
 | **id**    | **id**    | any, except root    | set item id    |
 | **value**    | **v**    | any    | set item value    |
-| error    | !    | root    | send error message    |
+| error    | error    | root    | send error message    |
 | style    | style    | root    | load stylesheet    |
 | open    | open    | root    | open or download external resource (without closing UI)    |
 | save    | save    | root    | save text/data to user's storage device    |
@@ -235,7 +235,7 @@ User event messages (i.e., UI->APP messages) are sent from UI software to the ap
 | **t**    | timestamp (number of milliseconds after handshake) indicating when user event has occurred; must be 0 for handshake and greater than 0 for all other messages    |
 | **u**    | unique id (or id-path) for item being toggled/changed in the UI    |
 | **v**    | value indicating user input    |
-| **!**    | error message to be dumped into app-side error stream    |
+| **error**    | error message to be dumped into app-side error stream    |
 | *userAgent*    | information about UI software (i.e., user-agent name, version)    |
 | *wh*    | available width/height of application window (in pixels)    |
 | *ip*    | user-agent ip address    |
