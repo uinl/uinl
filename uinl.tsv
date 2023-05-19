@@ -1,5 +1,5 @@
 UINL (User Interface object-Notation Language)				
-v1.1.20230423				
+v1.1.20230519				
 				
 Sample Interaction				
 Message Type	Message Content		Description	
@@ -218,7 +218,7 @@ Label Name	Grammar	Long-form Grammar	Description	Example
 <<dpProp>>	"err":[<<number>>,<<number>>]	"errorBars":[<<number>>,<<number>>]	error bars lengths; <<number>>,<<number>> represent top and bottom error bars lengths, respectively (i.e., how far error bars extend up and down from "v"); for <<plotType>> "ohlc" <<number>>,<<number>> represent how far above the closing price the high was and how far below closing the low price was, respectively; for <<plotType>> "box", "v" is the mid-point of the box (usually used to represent mean or median), and <<number>>,<<number>> indicate how far above the mid-point and how far below the mid-point the top and bottom edges of box are drawn, respectively (usually used to represent margins of error); this property is ignored for <<plotType>> "bar"	
 <<dpProp>>	"err":[<<number>>,<<number>>,<<number>>,<<number>>]	"errorBars":[<<number>>,<<number>>,<<number>>,<<number>>]	error bars lengths for <<plotType>> "box", turning it into a box-and-whiskers plot; "v" is the mid-point of the box (usually used to represent median), and <<number>>,<<number>>,<<number>>,<<number>> indicate how far above the mid-point the top edge of the box is drawn, how far below the mid-point the bottom edges of box is drawn, how far above mid-point the top whisker is drawn, and how far below mid-point the bottom whisker is drawn, respectively (usually used to represent upper quartile, lower quartile, maximum, and minimum, respectively); for any <<plotType>> other than "box", the 3rd and 4th <<number>>'s are ignored; this property is ignored for <<plotType>> "bar"	
 <<dpProp>>	"af":<<number>>	"affect":<<number>>	same as <<property>> "af" for all other item classes, except for <<plotType>> "ohlc"; for <<plotType>> "ohlc" <<number>> can be any number, and this property indicates price change, and it is used to calculate/plot opening price	Ex: {"c":"data","plt":"ohlc","v":[100,120,110,130],"<-":{"af":[5,18,-10,22]}} will plot open-close values of 95-100, 102-120, 120-110, and 108-130
-<<dpProp>>	"ef":<<number>>	"effect":<<number>>	same as <<property>> "ef" for all other item classes, but <<number>> should always be between 0 and 1	
+<<dpProp>>	"ef":<<number>>	"effect":<<number>>	same as <<property>> "ef" for all other item classes, except for <<plotType>> "xy"; for <<plotType>> "xy" <<number>> should always be between 0 and 1, and will be displayed as the size of the drawn point	
 <<viewportProp>>	"w":<<uint>>	"width":<<uint>>	width of viewport	
 <<viewportProp>>	"h":<<uint>>	"height":<<uint>>	height of viewport	
 <<grgProp>>	"x^":<<number>>	"scaleX":<<number>>	scale (stretch/zoom) group of items along x-axis ("x" is the origin); <<number>> should be higher than 0 and indicates percent of scale (i.e., "x^":100 is original scale)	
