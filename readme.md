@@ -31,6 +31,10 @@ Check out the full UINL spec with examples:
 - [google spreadsheet](https://docs.google.com/spreadsheets/d/1OkwYU2Wq-ysESvEwfeu7J0NrEw2qGadOCmkjEe0JKc4/edit?usp=sharing)
 - [tab-separated values](uinl.tsv)
 
+Check out u1js UINL library and demo:
+- [u1js](https://uinl.github.io/u1js/)
+- [demo](https://uinl.github.io/u1js/demo.html)
+
 
 ----
 
