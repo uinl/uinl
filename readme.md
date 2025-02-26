@@ -27,9 +27,6 @@ Benefits of agent development for UINL-compliant tasks:
 
 ---
 
-Below are brief descriptions of UINL widgets and features.
-
-
 ### UINL 1.2 (current)
 
 Check out the full UINL 1.2 spec with examples:
